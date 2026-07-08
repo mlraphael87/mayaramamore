@@ -292,18 +292,8 @@ export default function Home() {
           </section>
 
           <section id="quem-sou" className="bg-white py-16 sm:py-20">
-            <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-6 md:grid-cols-[0.9fr_1.1fr] md:items-center lg:px-8">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-[#efe3d1] md:max-w-md">
-                <Image
-                  src="/images/mayara-mamore-biomedica-esteta-cuiaba.png"
-                  alt="Retrato profissional de Mayara Mamoré, biomédica esteta responsável pela clínica em Cuiabá"
-                  fill
-                  sizes="(min-width: 768px) 420px, 100vw"
-                  className="object-cover"
-                />
-              </div>
-
-              <article>
+            <div className="mx-auto max-w-5xl px-5 sm:px-6 lg:px-8">
+              <article className="max-w-4xl">
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#c4a35a]">
                   Autoridade e cuidado técnico
                 </p>
