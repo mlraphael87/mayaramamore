@@ -191,6 +191,30 @@ function WhatsAppButton({
   );
 }
 
+function WhatsAppIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 32 32"
+      className="h-7 w-7"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M16 4.5c-6.08 0-11 4.63-11 10.35 0 2.1.66 4.04 1.8 5.67L5.75 27.5l6.46-2.08c1.18.43 2.46.66 3.79.66 6.08 0 11-4.63 11-10.35S22.08 4.5 16 4.5Z"
+        stroke="currentColor"
+        strokeWidth="2.15"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.2 11.2c.2-.44.42-.46.64-.46h.56c.18 0 .43.03.65.5.23.52.78 1.82.85 1.96.08.14.12.3.03.48-.09.2-.14.3-.28.46-.14.16-.3.36-.43.48-.14.14-.29.3-.12.58.16.28.72 1.2 1.55 1.95 1.07.96 1.96 1.25 2.26 1.39.29.14.46.12.63-.08.18-.2.73-.8.93-1.08.2-.28.39-.23.65-.14.27.1 1.68.77 1.96.91.29.15.48.23.55.37.07.14.07.82-.16 1.6-.23.77-1.35 1.47-1.88 1.52-.48.05-1.1.07-1.77-.1-.41-.1-.93-.29-1.6-.56-2.8-1.14-4.63-3.78-4.77-3.95-.14-.18-1.14-1.44-1.14-2.75s.72-1.95.92-2.4Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -519,7 +543,7 @@ export default function Home() {
           aria-label="Agendar atendimento pelo WhatsApp"
           className="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#65735f] text-sm font-bold text-white shadow-2xl shadow-[#65735f]/30 ring-1 ring-white/60 transition hover:bg-[#53624f] focus:outline-none focus:ring-2 focus:ring-[#c4a35a] focus:ring-offset-2 md:hidden"
         >
-          Agendar
+          <WhatsAppIcon />
         </Link>
       </div>
     </>
